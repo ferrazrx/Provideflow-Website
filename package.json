@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/ferrazrx/provideflow_website/issues"
   },
-  "homepage": "https://github.com/ferrazrx/provideflow_website#readme"
+  "homepage": "https://github.com/ferrazrx/provideflow_website#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "postcss-import": "^10.0.0",
+    "postcss-nested": "^2.1.2",
+    "postcss-simple-vars": "^4.1.0"
+  }
 }
