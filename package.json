@@ -1,0 +1,19 @@
+{
+  "name": "provideflow_website",
+  "version": "1.0.0",
+  "description": "Provide Flow Home Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferrazrx/provideflow_website.git"
+  },
+  "author": "Provide Flow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferrazrx/provideflow_website/issues"
+  },
+  "homepage": "https://github.com/ferrazrx/provideflow_website#readme"
+}
