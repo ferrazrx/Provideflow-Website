@@ -1,1 +1,1 @@
-require('./gulp/style.task');
+require('./gulp/gulp.watch');
