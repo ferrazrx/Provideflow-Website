@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ferrazrx/provideflow_website#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.3.0",

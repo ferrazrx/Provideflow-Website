@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     importCSS = require('postcss-import'),
     uglifycss = require('gulp-uglifycss'),
     sourcemaps = require('gulp-sourcemaps'),
+    browserSync = require('browser-sync'),
     plumber = require('gulp-plumber');
 
 gulp.task('style', function(){
@@ -19,9 +20,10 @@ gulp.task('style', function(){
   .pipe(postcss([importCSS, cssvars, nested, autoprefixer]))
   .pipe(uglifycss())
   .pipe(sourcemaps.write())
-  .pipe(gulp.dest('./dist/css'));
+  .pipe(gulp.dest('./dist/view/css'));
 });
 
-gulp.task('watch', function(){
-  gulp.watch('./src/styles/**/*.css', ['style']);
+gulp.task('cssInject',['style'], function(){
+  return gulp.src('./dist/view/css/styles.css')
+  .pipe(browserSync.stream());
 });

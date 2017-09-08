@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8%;
+  animation: fade 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 3.5s;
+
+  h1{
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+    text-shadow: -1px -1px 30px rgba(0, 0, 0, 0.5),
+                 -2px -2px 30px rgba(0, 0, 0, 0.5),
+                 -3px -3px 30px rgba(0,0,0,0.5),
+                  1px 1px 30px rgba(0, 0, 0, 0.5),
+                  2px 2px 30px rgba(0, 0, 0, 0.5),
+                  3px 3px 30px rgba(0,0,0,0.5);
+  }
+}

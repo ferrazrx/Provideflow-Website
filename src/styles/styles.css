@@ -1,1 +1,6 @@
+@import "general/normalize.css";
+@import "general/fonts.css";
+@import "general/_general.css";
+@import "general/_background.css";
 @import "modules/_large-hero.css";
+@import "modules/_footer.css";
