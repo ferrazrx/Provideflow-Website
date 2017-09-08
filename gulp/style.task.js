@@ -7,6 +7,7 @@ var gulp = require('gulp'),
     uglifycss = require('gulp-uglifycss'),
     sourcemaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync'),
+    mixinis = require('postcss-mixins');
     plumber = require('gulp-plumber');
 
 gulp.task('style', function(){
@@ -17,7 +18,7 @@ gulp.task('style', function(){
       console.log(err);
     }
   }))
-  .pipe(postcss([importCSS, cssvars, nested, autoprefixer]))
+  .pipe(postcss([importCSS, mixinis, cssvars, nested, autoprefixer]))
   .pipe(uglifycss())
   .pipe(sourcemaps.write())
   .pipe(gulp.dest('./dist/view/css'));
