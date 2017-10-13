@@ -1,21 +1,27 @@
-.large-hero{
+.large-hero {
   display: flex;
   width: 100%;
-  height: 90%;
+  height: 80%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: relative;
-  overflow: hidden;
-    @mixin atSmall{
-      flex-direction: row;
-    }
 
-  &_title{
+  @mixin atSmall {
+    flex-direction: row;
+  }
+  &_icon {
+    width: 50% ;
+
+    @mixin atSmall{
+      max-width: 200px;
+    }
+  }
+  &_title {
+    display: block;
     font-family: Infinity;
-    font-size: 2rem;
-    font-weight: 100;
-    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba(252,252,252,0.9);
     padding: 10px;
     text-align: center;
 
@@ -30,51 +36,41 @@
       font-size: 2.5rem;
     }
     @mixin atLarge{
-      font-size: 4rem;
+      font-size: 4.5rem;
     }
 
   }
   &_section{
-    display: flex;
     flex: 1;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
     background-color: rgba(0, 0, 0, 0);
-    transition: 1s ease;
+
+    @mixin atSmall{
+      margin: 10px;
+    }
   }
-  &_section:hover{
-    transform: scale(1.1);
+  p{
+    font-weight: 400;
+    color: rgba(252,252,252,0.9);
+    padding: 20px;
+    font-size: 1rem;
+    max-width: 970px;
+    background-color: rgba(0,0,0,0.5);
+    @mixin atSmall{
+      font-size: 2em;
+    }
+    @mixin atSmall{
+      font-size: 1.2rem;
+    }
+    @mixin atMedium{
+      font-size: 2.2rem;
+    }
   }
-  &_img{
-    width: 30%;
-    color: #FFF;
-    margin: 10px;
+  a{
+    color: rgba(252,252,252,0.9);
   }
-}
-.animation{
-  &_1{
-    animation: fade 1s;
-    animation-fill-mode: backwards;
-    animation-delay: .5s;
-  }
-  &_2{
-    animation: fade 1s;
-    animation-fill-mode: backwards;
-    animation-delay: 1.5s;
-  }
-  &_3{
-    animation: fade 1s;
-    animation-fill-mode: backwards;
-    animation-delay: 2.5s;
-  }
-}
-@keyframes fade {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+
+
 }

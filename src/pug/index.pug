@@ -1,29 +1,55 @@
 doctype html
 html(lang="en")
   head
-    title= 'Provide Flow | Home Page'
+    title Provide Flow | Home Page
+    meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
+    //-Style Link
     link(href='/css/styles.css', rel='stylesheet')
-    script(src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous")
+    script(src="/js/jquery-3.2.1.min.js")
   body
+    div.menu
+      ul
+        li.home Home
+        li.aboutus About Us
+        li.contact Contact Us
+    nav.animation--fourth
+      img.logo(src="img/logo.png")
+      ul
+        li.home Home
+        li.aboutus About Us
+        li.contact Contact Us
+      img.button(src="img/menu.png" alt="menu")
     div.large-hero
-        div.large-hero_section.animation_1
-          img.large-hero_img(src='/img/idea-1.svg')
+        div.large-hero_section.animation--first.display--show
+          img.large-hero_icon(src="img/idea-1.svg" alt="Idea")
           h1.large-hero_title Design
-        div.large-hero_section.animation_2
-          img.large-hero_img(src='/img/smartphone.svg')
+        div.large-hero_section.animation--second.display--show
+          img.large-hero_icon(src="img/smartphone.svg" alt="Design")
           h1.large-hero_title Prototype
-        div.large-hero_section.animation_3
-          img.large-hero_img(src='/img/graphic-design.svg')
-          h1.large-hero_title Development
-    div.footer#end-of-page
-      h1 provideflow.com
-    script.
-      $(document).ready(function(){
-        var end = document.getElementById('end-of-page');
-        while (end.nextSibling) {
-          end.nextSibling.remove();
-        }
-      });
+        div.large-hero_section.animation--third.display--show
+          img.large-hero_icon(src="img/graphic-design.svg" alt="Design")
+          h1.large-hero_title Develop
+        div#contact_p.display--none.animation--first
+          p
+            |Please contact us by sending email to: 
+            strong 
+              a(href="mailto:questions@provideflow.com") questions@provideflow.com
+        div#aboutus_p.display--none.animation--first   
+          p
+            |We are a unique, cutting-edge software development team devoted to designing, 
+            |prototyping and developing web, web apps, and new online software for you.
+            br
+            br
+            |Provideflow.com is a new concept company designated to creating unique, well-established 
+            |running software providing flow to any organization, any size, for new or long-standing 
+            |businesses. 
+            br
+            br
+            |Feel free to contact us about any questions you may have about our quality 
+            |product creation or on-going service.
+    footer.footer.animation--fourth
+      p
+        |Copyright 2017 - Provide Flow
+    
+    script(src="/js/all.js")

@@ -1,0 +1,26 @@
+.animation{
+  &--first{
+    animation: fade 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.25s;
+  }
+  &--second{
+    animation: fade 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+  }
+  &--third{
+    animation: fade 1s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+  }
+  &--fourth{
+    animation: fade 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+  }
+}
+@keyframes fade {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}

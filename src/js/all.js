@@ -1,0 +1,22 @@
+$(".aboutus").click(function(){
+  $(".large-hero_section").removeClass("display--show").addClass("display--none");
+  $("#contact_p").removeClass("display--show").addClass("display--none");
+  $("#aboutus_p").removeClass("display--none").addClass("display--show");
+});
+
+$(".contact").click(function(){
+  $(".large-hero_section").removeClass("display--show").addClass("display--none");
+  $("#aboutus_p").removeClass("display--show").addClass("display--none");
+  $("#contact_p").removeClass("display--none").addClass("display--show");
+});
+$(".home").click(function(){
+  $(".large-hero_section").removeClass("display--none").addClass("display--show");
+  $("#aboutus_p").removeClass("display--show").addClass("display--none");
+  $("#contact_p").removeClass("display--show").addClass("display--none");
+});
+$(".button").click(function(){
+  $(".menu").toggleClass("visible");
+});
+$(".menu").click(function(){
+  $(".menu").toggleClass("visible");
+});

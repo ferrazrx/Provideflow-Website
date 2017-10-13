@@ -1,7 +1,11 @@
 @import "base/normalize.css";
 @import "base/fonts.css";
 @import "base/_base.css";
+@import "base/_display.css";
 @import "base/_background.css";
 @import "base/_mixins.css";
 @import "modules/_large-hero.css";
 @import "modules/_footer.css";
+@import "modules/_nav.css";
+@import "modules/_menu.css";
+@import "modules/_animation.css";

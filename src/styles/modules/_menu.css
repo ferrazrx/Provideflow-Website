@@ -1,0 +1,37 @@
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate3d(0, -100vh, 0);
+    background-color: #000;
+    z-index: 5;
+    transition: 1s all;
+
+    width: 100vw;
+
+    ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    li {
+      list-style: none;
+      display: inline;
+      color: #FFF;
+      padding: 10px 30px 10px 30px;
+      font-size: 1.3rem;
+      transition: all 1s;
+      cursor: pointer;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    li:hover {
+      background-color: #FFF;
+      color: #000;
+
+    }
+}
+
+.visible {
+    transform: translate3d(0, 0vh, 0);
+}

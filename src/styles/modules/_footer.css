@@ -4,29 +4,25 @@
   align-items: center;
   width: 100%;
   height: 8%;
-  animation: fade 1s;
-  animation-fill-mode: backwards;
-  animation-delay: 3.5s;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 0px;
 
-  h1{
+  p{
     color: #FFF;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 100;
-    margin-bottom: 10px;
-    text-shadow: -1px -1px 30px rgba(0, 0, 0, 0.5),
-                 -2px -2px 30px rgba(0, 0, 0, 0.5),
-                 -3px -3px 30px rgba(0,0,0,0.5),
-                  1px 1px 30px rgba(0, 0, 0, 0.5),
-                  2px 2px 30px rgba(0, 0, 0, 0.5),
-                  3px 3px 30px rgba(0,0,0,0.5);
+    font-size: 1em;
     @mixin atSmall{
       font-size: 1.5rem;
     }
+
     @mixin atMedium{
       font-size: 2.5rem;
     }
+
     @mixin atLarge{
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
 }
